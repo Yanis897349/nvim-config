@@ -1,8 +1,12 @@
-# nvim-config
+# 🚀 nvim-config
 
-## Key Mappings
+## ⚙️ Configuration
 
-### Normal Mode
+- Map leader is set to a space character (`vim.g.mapleader = " "`).
+
+## 🔑 Key Mappings
+
+### 🌟 Normal Mode
 
 - `<leader>pv`: Open the Ex command-line mode.
 - `J` (Visual Mode): Move selected text down by one line and reselect.
@@ -25,10 +29,62 @@
 - `<leader>mr`: Execute the "CellularAutomaton make_it_rain" command.
 - `<leader><leader>` (Normal Mode): Source the current file as Vimscript.
 
-### Insert Mode
+### ✍️ Insert Mode
 
 - `<C-c>`: Act as if you pressed the Escape key to exit insert mode.
 
-## Configuration
+## 📦 Plugins
 
-- Map leader is set to a space character (`vim.g.mapleader = " "`).
+### Fugitive (Git Integration) 🐙
+
+- `<leader>gs`: Open the Git command-line interface.
+- `<leader>p`: Execute a function to push changes.
+- `<leader>P`: Execute a function to pull changes and rebase.
+- `<leader>t`: Execute a Git push command with options.
+- `<leader>gh`: Execute a command to get a specific version from Git diff.
+- `<leader>gl`: Execute a command to get a specific version from Git diff.
+
+### Harpoon (Project Navigation) 🌐
+
+- `<leader>a`: Add the current file to Harpoon's project.
+- `<C-e>`: Toggle the quick menu for Harpoon.
+- `<C-h>`: Navigate to the previous file in Harpoon.
+- `<C-t>`: Navigate to the next file in Harpoon.
+- `<C-n>`: Navigate to the first file in Harpoon.
+- `<C-s>`: Navigate to the last file in Harpoon.
+
+### Language Server Protocol (LSP) 🌐
+
+- `gd`: Go to definition.
+- `K`: Show hover information.
+- `<leader>vws`: Search for symbols in the workspace.
+- `<leader>vd`: Open diagnostic messages in a float window.
+- `[d`: Go to the next diagnostic message.
+- `]d`: Go to the previous diagnostic message.
+- `<leader>vca`: Execute code actions.
+- `<leader>vrr`: Find references.
+- `<leader>vrn`: Rename symbol.
+- `<C-h>` (Insert Mode): Show signature help.
+
+### Refactoring 🛠️
+
+- `<leader>ri` (Visual Mode): Inline variable refactoring.
+
+### Telescope (File Picker) 🔭
+
+- `<leader>pf`: Find files.
+- `<C-p>`: Find Git-tracked files.
+- `<leader>ps`: Grep string in files.
+- `<leader>vh`: Show help tags.
+
+### Trouble (Quickfix List) 🐛
+
+- `<leader>xq`: Toggle the quickfix list.
+
+### Undotree (Undo History) ⏪
+
+- `<leader>u`: Toggle Undotree.
+
+### Zenmode 🧘
+
+- `<leader>zz`: Activate Zenmode.
